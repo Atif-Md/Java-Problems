@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class QueOnBreak {
     public static void main(String[] args) {
+        //Keep entering numbers till user enters multiples of 10
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number: ");
         int num = sc.nextInt();
