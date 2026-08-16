@@ -1,6 +1,21 @@
 import java.util.Scanner;
-class BinaryToDecimal
-{
+class BinaryToDecimal {
+
+
+	public static int binaryToDecimal(int binaryNum) {
+		int temp = binaryNum;
+		int decimal = 0;
+		int pow = 1;
+		while (temp > 0) {
+			int last_digit = temp%10;
+			decimal += (last_digit * pow);
+			temp /= 10;
+			pow *= 2;
+		}
+		return decimal;
+	}
+
+
 	public static void main(String[] args) throws InterruptedException
 	{
 		Scanner sc = new Scanner(System.in);
@@ -16,6 +31,8 @@ class BinaryToDecimal
 			pw *= 2;
 		}
 		System.out.println("Decimal number of "+binary_num+" is: "+ans);
+
+		System.out.println("Decimal value: "+binaryToDecimal(binary_num));
 
 	}
 }
