@@ -11,6 +11,7 @@ public class Project1 {
 
 		System.out.println("=====Welcome to Organic Store=====");
 		System.out.println("------------------------------------------------");
+		shopping:
 		while(true) {
 			System.out.println("Available products in the store");
 			System.out.println("1)Fruits");
@@ -61,7 +62,7 @@ public class Project1 {
 
 						switch(sc.nextInt()) {
 							case 1: continue;
-							case 2: break;
+							case 2: break shopping;
 						}
 						
 						break;
@@ -112,7 +113,7 @@ public class Project1 {
 
 						switch(sc.nextInt()) {
 							case 1: continue;
-							case 2: break;
+							case 2: break shopping;
 						}
 
 						break;
@@ -157,7 +158,7 @@ public class Project1 {
 
 							switch(sc.nextInt()) {
 								case 1: continue;
-								case 2: break;
+								case 2: break shopping;
 							}
 
 						break;
@@ -181,7 +182,7 @@ public class Project1 {
 
 						switch(sc.nextInt()) {
 							case 1: continue;
-							case 2: break;
+							case 2: break shopping;
 						}
 
 						break;
@@ -191,7 +192,7 @@ public class Project1 {
 			
 			
 		}
-		//System.out.println("Billing time");
+		System.out.println("Billing time");
 	}
 	
 }

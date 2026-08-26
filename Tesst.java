@@ -2,21 +2,17 @@ import java.util.Scanner;
 
 class Tesst {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter cost of a pencil: ");
-        int a = sc.nextInt();
-        System.out.println("Enter cost of a pen: ");
-        int b = sc.nextInt();
-        System.out.println("Enter cost of eraser: ");
-        int c = sc.nextInt();
+        // char [] alphabet = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+        // int index = 0;
 
-        int total = a + b + c;
+        char ch = 'A';
 
-        System.out.println("Your total cost is: "+total);
-        System.out.println("18% GST amount: "+(total*0.18));
-
-        System.out.println("Total cost after adding GST: "+(total+(total*0.18)));
+        for(int i = 0 ; i < 4 ; i++) {
+            for(int j = 0 ; j <= i ; j++)
+                System.out.print(ch++);
+            System.out.println();
+        }
 
     }
 }

@@ -3,9 +3,9 @@ class InvertedHalfPyramidPattern
 {
 	public static void main(String[] args) 
 	{
-		// Scanner sc = new Scanner(System.in);
-		// System.out.print("Enter Number of Rows : ");
-		// int row =sc.nextInt();
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter Number of Rows : ");
+		int rows =sc.nextInt();
 		
 
 		// //First Approach
@@ -23,24 +23,25 @@ class InvertedHalfPyramidPattern
 		// */
 
 
-		// //Second Approach
+		//Second Approach
 
-		// for (int i=row;i>=1 ;i-- )
-		// {
-		// 	for (int j=1;j<=i ;j++ )
-		// 	{
-		// 		System.out.print("* ");
-		// 	}
-		// 	System.out.println();
-		// }
-
-
+		for (int i=rows;i>=1 ;i-- )
+		{
+			for (int j=1;j<=i ;j++ )
+			{
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
 
 
-		Scanner sc = new Scanner(System.in);
+
+		// Inverted and rotated half pyramid pattern
+
+		// Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Enter number of rows: ");
-		int rows = sc.nextInt();
+		// System.out.println("Enter number of rows: ");
+		// int rows = sc.nextInt();
 
 		for(int i = 1 ; i <= rows ; i++) {
 			for(int j = 1 ; j <= rows ; j++) {
